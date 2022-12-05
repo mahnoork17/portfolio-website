@@ -1,0 +1,44 @@
+body {
+  background-color:#ffffff;
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color:black;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+.button.contact {
+  background-color:darkolivegreen;
+  border:black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button.contact:hover {
+  background-color:#ffffff;
+  color:black;
+  text-decoration: underline
+}
