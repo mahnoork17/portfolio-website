@@ -1,50 +1,13 @@
-/*
-Colors used:
-Background Color (white): #FFFFFF;
-Primary Color (black): black
-Secondary Color (darkolive green):#556b2f;
-Text Color (Black): #000000;
-*/
-* {
-  box-sizing: border-box;
-}
-
-.content {
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.logo {
-  max-width: 250px;
-}
 header {
-    background-color: white;
-    padding: 100px 100px;
-    margin: 10px;
-    width: 100%
+  background-color: white;
+  text-align: center;
+  padding: 10px 5px 15px 5px;
+  margin: 10px;
+  border-bottom: 3px solid darkolivegreen
+  * {
+    box-sizing: border-box;
+  }
 }
-    border-bottom: 3px solid white;
-  }
-  nav > ul {
-    padding: 50;
-    text-align: center;
-  }
-  nav > ul > li {
-    display: inline-block;
-  }
-  nav>ul>li>a {
-    color:darkolivegreen;
-    font-weight: 500;
-    padding: 50 15px;
-    text-transform: uppercase;
-    list-style-type: none;
-  }
-  
-  nav> a:hover {
-    color: black
-    text-decoration:underline;
-  }
-  
 body {
   background-color:#ffffff;
   font-family: raleway, sans-serif;
@@ -56,12 +19,11 @@ body {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  text-align: center;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700
+  font-weight: 700;
 }
 
 h3 {
@@ -73,58 +35,9 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-p {
-  margin: 0;
-  padding: 15px 0;
-}
-
-ul {
-  margin: ;
-  padding: 50 50 50 30px;
-  list-style: none;
-}
-
-#lessons h4 {
-  margin-top: 20px;
-  color:#ffffff;
-}
-/* Layout styling */
-.container {
-  padding: 0 15px;
-}
-
-#hero p {
-  font-family: raleway, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  padding: 10px 0;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.logo {
-  max-width: 250px;
-  padding: 10px 0;
-  margin: 10px 0;
-}
-
-#hero h1 {
-  text-align: center;
-  font-family: raleway, sans-serif;
-  color: black;
-  font-size: 50px;
-  font-weight: 500;
-  letter-spacing: 0.025em;
-  margin: 20px 0;
-}
-
-#hero {
-  background-color: #FFFFFF;
-  padding: 20px 0;
+img {
   width: 100%;
-  text-align: center;
-}
-
+  }
 .button.contact {
   background-color:darkolivegreen;
   border:black;
@@ -135,108 +48,83 @@ ul {
   display: inline-block;
   font-size: 16px;
 }
+
 .button.contact:hover {
   background-color:#ffffff;
   color:black;
   text-decoration: underline
 }
-footer {
-  background-color:white;
-  color:black;
-  padding: 15px 32px;
-  text-align: center;
-  width: 100%
-  
-}
 
-#contact h3 {
-  color: black;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  margin: 0;
-}
-
-.footer.icon {
-  padding-top: 20px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-.footer.icon a:hover {
-  color:white
-  border:black;
-}
-
-#copyright {
-  color:black;
-  font-size: 14px;
-  padding: 0;
-  text-align: right;
-  margin: 0;
-}
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
-
-header {
-  background-color: #ffffff;
-  padding: 10px 0;
-  position: fixed
-  text-align: center;
-  width: 100%;
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#hero p {
-  font-family: raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 10px 0;
-  line-height: 1.5;
-  margin: 0;
+#work .row { padding-bottom: 25px; }
+
+.center {
+  text-align: center;
 }
 
 .logo {
   max-width: 250px;
-  padding: 10px 0;
-  margin: 10px 0;
 }
 
-nav  {
-  padding: 0;
-  text-align: center;
-}
-
-nav {
-  color:darkolivegreen;
-  font-weight: 500;
-  padding: 0 15px;
+nav > ul {
   list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li {
+  width: 100%;
+}
+nav > ul > li > a {
+  padding: 0 15px;
   text-transform: uppercase;
+  font-weight: 700;
+  color: darkolivegreen;
 }
 
-nav> a:hover {
-  color: black
-  text-decoration:underline;
+nav > ul > li > a: visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: darkolivegreen;
 }
 
-hero {
-  font-family: raleway, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  padding: 10px 0;
-  line-height: 1.5;
-  margin: 70px;
+#hero h1 {
+  text-align: center; /* Centers text */
 }
 
-.thumbnail {
-  max-width: 400px;
-  padding: 10px 0;
-  margin: 10px 0;
-}
+#hero {
+  background-color: white;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
+box-shadow {
+  position: relative;
+}
 main {
-  margin: 100px ;
+  padding-top: 133px;
 }
 
+#work.row {
+  padding-bottom 25px; border-top: 1px solid darkolivegreen;
+ }
+ 
+ #prototype.row {
+ padding-bottom 25px; border-top: 1px solid darkolivegreen
+}
+
+#contact {
+  padding-bottom 25px; border-top: 1px solid darkolivegreen;
+ }
+ 
