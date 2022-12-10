@@ -10,18 +10,18 @@
 <body>
   <header>
     <div class="container">
-        <img src="img/logo.svg" alt="logo" />
+        <img src="img/logo.svg" height="60" alt="Logo">
     <nav>
         <ul class="navigation">
-              <li> <a href="skinconcierge.html">Work</a></li>
-              <li> <a href ="about.html">About</a></li>
-              <li> <a href =#contact>Contact</a></li>
-              </ul>
+            <li> <a href="skinconceirge.html">Work</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
     </nav>
+    </div><!--end container-->
  </header>
  
-  <main>
-    <div id="about">
+  <main><!-- open main -->
+    <div id="about-page">
         <div class="container">
                 <picture>
                     <source srcset="img/profilepic.png" media="(max-width:767px)">
@@ -43,13 +43,14 @@
                     true crime podcasts or maybe doing both at the same time. I enjoy hanging out with friends & family.
                     As a New Yorker i enjoy finding delicious desserts in town and little hidden gems like bars, bookstores
                     restaurants etc .</p>
-                    <a href="files/cv.pdf" class="button contact">View my Resume</a>
+                    <a href="files/cv.pdf" target="_blank" class="button contact">View my Resume</a>
                     </div>
                     
                     
                     <div><!--skills and tools start-->
-                    <div class="row">
                     <h2> Skills & Tools</h2>
+                    <div class="row">
+                        <div class="column col-md-6 col-lg-6">
                     <div>
                             <h3> Relevant Skills</h3>
                             <ul>
@@ -65,8 +66,10 @@
                                 <li>User Interface Design</li>
                                 </ul>
                         </div>
-                        <div class="row">
+                    </div><!--end class column-->
                             <h3> Tools</h3>
+                            <div class="row">
+                                <div class="column col-md-6 col-lg-6">
                             <ul>
                             <li>Figma</li>
                                 <li>Sketch</li>
@@ -82,14 +85,14 @@
                         </div>
                         </div>
                     </div><!--end skills and tools-->
+                </div><!--end class column-->
             </div><!--end container-->
-        </div><!--end about-->
+        </div><!--end about-page-->
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-          <footer id="contact">
             <h3> Get in Touch</h3>
             <div>
             <p>If you like my work and would like to get in touch</p>
@@ -106,6 +109,7 @@
                </div>
             <div>
                 <p>Coptright Mahnoor Khan 2022</p>
+            </div>    
             </div><!---end container-->
 </footer>
 </body>

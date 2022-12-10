@@ -1,17 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+
+
 header {
-  background-color: white;
+  background-color: ghostwhite;
   text-align: center;
   padding: 10px 5px 15px 5px;
   margin: 10px;
-  border-bottom: 3px solid darkolivegreen
-  * {
-    box-sizing: border-box;
-  }
+  border-bottom: 1px solid darkolivegreen;
+  width: 100%;
+  position:relative;
+  
 }
+#about-page h3 { 
+  margin-top: 0;
+}
+
 body {
   background-color:#ffffff;
   font-family: raleway, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color:black;
 }
@@ -38,22 +47,22 @@ h4 {
 img {
   width: 100%;
   }
-.button.contact {
-  background-color:darkolivegreen;
-  border:black;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button.contact:hover {
-  background-color:#ffffff;
-  color:black;
-  text-decoration: underline
-}
+  
+  .button.contact {
+    display: inline-block;
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid darkolivegreen;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+  }
+  .button.button.contact:hover {
+    opacity: 0.8;
+  }
 
 /* Layout styling */
 .container {
@@ -81,9 +90,7 @@ nav > ul {
 nav > ul > li {
   display: inline-block;
 }
-nav > ul > li {
-  width: 100%;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -102,11 +109,17 @@ nav > ul > li > a: visited {
   text-align: center; /* Centers text */
 }
 
+#hero h1 {
+  text-align: center; /* Centers text */
+}
 #hero {
   background-color: white;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+#hero span {
+  display: block;
 }
 
 box-shadow {
@@ -117,14 +130,112 @@ main {
 }
 
 #work.row {
-  padding-bottom 25px; border-top: 1px solid darkolivegreen;
+  padding-bottom: 25px; 
+  border-top: 1px solid darkolivegreen;
  }
+
  
  #prototype.row {
- padding-bottom 25px; border-top: 1px solid darkolivegreen
+ padding-bottom: 25px; 
+ border-top: 1px solid darkolivegreen
 }
 
+/*-- Animation--*/
+.berlin-image {
+	width: 100%;
+	max-width: 100%;
+	height: auto:
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 #contact {
-  padding-bottom 25px; border-top: 1px solid darkolivegreen;
+  padding-bottom: 25px; 
+  border-top: 1px solid darkolivegreen;
  }
  
+ footer {
+  background-color: ghostwhite;
+  padding: 10px 5px 15px 5px;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
+ }
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+
+
