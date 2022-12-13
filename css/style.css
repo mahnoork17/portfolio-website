@@ -5,16 +5,13 @@
 
 header {
   background-color: ghostwhite;
-  text-align: center;
-  padding: 10px 5px 15px 5px;
+  padding: 10px 0px 4px;
   margin: 10px;
   border-bottom: 1px solid darkolivegreen;
   width: 100%;
   position:relative;
+
   
-}
-#about-page h3 { 
-  margin-top: 0;
 }
 
 body {
@@ -47,6 +44,14 @@ h4 {
 img {
   width: 100%;
   }
+
+  #about-page h3 { 
+    margin-top: 0;
+  }
+
+  main {
+    padding-top: 56px;
+  }
   
   .button.contact {
     display: inline-block;
@@ -74,24 +79,46 @@ img {
 
 #work .row { padding-bottom: 25px; }
 
-.center {
-  text-align: center;
-}
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-right: 0;
+  font-size: 20px;
 }
 
 nav > ul > li {
   display: inline-block;
-}
-
-nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -126,9 +153,6 @@ nav > ul > li > a: visited {
 box-shadow {
   position: relative;
 }
-main {
-  padding-top: 85px;
-}
 
 #work.row {
   padding-bottom: 25px; 
@@ -156,7 +180,15 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+#hero img {
+  max-width: 750px;
+}
 
+#contact {
+  padding-bottom: 25px; 
+  border-top: 1px solid darkolivegreen;
+ }
+ 
 /*-- Animation--*/
 .berlin-image {
 	width: 100%;
@@ -168,15 +200,18 @@ main {
   from {fill: #edc655;}
   to {fill: #f76414;}
 }
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
+
 @keyframes cloud-move {
   from {transform: translate(0,50px);}
   to {transform: translate(200px,50px);}
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -184,18 +219,17 @@ main {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
   from {transform: translate(446px,48px);}
   to {transform: translate(100px, 48px);}
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-#contact {
-  padding-bottom: 25px; 
-  border-top: 1px solid darkolivegreen;
- }
- 
+
+
  footer {
   background-color: ghostwhite;
   padding: 10px 5px 15px 5px;
@@ -206,11 +240,31 @@ main {
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+ 
+  img {
+    max-width: 250px;
   }
 
   nav {
@@ -242,6 +296,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 /* ==============================
 X-large devices (1440px or larger)

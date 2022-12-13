@@ -7,11 +7,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/01aad800bc.js" crossorigin="anonymous"></script>
+        </head>
 
 <body>
   <header>
-      <div class="container">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
         <img src="img/logo.svg" height="60" alt="Logo">
       </a>
@@ -20,8 +23,11 @@
             <li> <a href="skinconceirge.html">Work</a></li>
             <li> <a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+              <i class="fas fa-bars"></i></a></li>
               </ul>
     </nav>
+    </div>
     </div><!--end container-->
  </header>
         <main><!-- open main -->
@@ -34,12 +40,13 @@
         <div class="container">
         <h2> My Projects</h2>
         <div class="row">
-          <div class="column col-md-6 col-lg-7">
-        <picture>
+          <div class="col-md-6 col-lg-7">
+          <picture>
           <source srcset="img/ux_project/thumbnail.jpg" media="(max-width:767px)">
           <img src="img/ux_project/thumbnail.jpg" alt="thumbnail">
         </picture>
-        <div class="column col-md-6 col-lg-5">
+      </div>
+        <div class="col-md-6 col-lg-5">
                     <h3> Skin Concierge</h3>
                     <p>Skin Concierge ( Case Study). A skincare app focused on improving the health of your skin. 
                         My role was that of a UX/UI Designer. My tools of choice were Adobe XD and Figma</p>
@@ -47,21 +54,24 @@
                         </div>
                         </div><!--end row-->
                         <div class="row">
-                          <div class="column col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="img/berlin-image.svg" media="(max-width:767px)">
-                            <img src="img/berlin-image.svg"  alt="animation">
-                        </picture>
-                      </svg>
-                      <div class="column col-md-6 col-lg-5">
-                          <h3> Animation</h3>
-                          <p>FUN TIMES!</p>
-                              <a href="skinconceirge.html" class="button contact">View Project</a>
-                              </div>
-                              </div><!--end row-->
+                          <div class="col-md-6 col-lg-7">
+                            <picture>
+                              <source srcset="img/berlin-image.svg" media="(max-width:767px)">
+                              <img src="img/berlin-image.svg"  alt="animation">
+                          </picture>
+                        </svg>
+                      </div>
+                      <div class="col-md-6 col-lg-5">
+                              <h3>Animation</h3>
+                              <p>coding experiment</p>
+                                  <a href="skinconceirge.html" class="button contact">View Project</a>
+                                  </div>
+                                  </div><!--end row-->
+                                  
+                                  
+                      
+                      
          </div><!--end container-->
-        </div><!---end class cloumn-->
-      </div><!---end class cloumn-->
       </div><!--end work-->   
 </div><!--end hero-->                       
 </main>
@@ -87,6 +97,7 @@
              </div>   
             </div><!---end container-->
 </footer> 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
