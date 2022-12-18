@@ -125,7 +125,7 @@ nav > ul > li {
   color: darkolivegreen;
 }
 
-nav > ul > li > a: visited {
+nav > ul > li > a visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -191,7 +191,7 @@ box-shadow {
 .berlin-image {
 	width: 100%;
 	max-width: 100%;
-	height: auto:
+	height: auto;
 }
 
 @keyframes color-change {
